@@ -3,20 +3,19 @@ pipeline {
   stages {
     stage('Plan Stage') {
       steps {
-        powershell 'Echo"Compiling"'
-        powershell 'Encoding"Compiling"'
+        powershell 'echo "Compiling"'
       }
     }
 
     stage('Code Stage') {
       steps {
-        powershell 'echo"Coding"'
+        powershell 'echo "Coding"'
       }
     }
 
     stage('Build Stage') {
       steps {
-        powershell 'echo"Building"'
+        powershell 'echo "Building"'
       }
     }
 
